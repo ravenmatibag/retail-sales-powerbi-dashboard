@@ -119,6 +119,7 @@ The Power BI data model consists of several related tables used to support the d
 * **Orders**
 * **Products**
 * **Payments**
+* **Calendar**
 
 Relationships between the tables allow sales, orders, customers, products, and payment information to be analyzed together.
 
