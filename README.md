@@ -41,10 +41,10 @@ Interactive slicers and visualizations allow users to explore the data across di
 * 📊 Month-over-Month (MoM) growth
 * 📈 Year-over-Year (YoY) growth
 * 💵 Average Order Value (AOV)
-* ❌ Cancellation rate analysis
 * 🔎 Interactive slicers and filters
 * 📌 KPI cards
 * 📊 Customer behavior analysis
+....
 
 ---
 
@@ -144,14 +144,7 @@ SUMX(
 ### Cancellation Rate
 
 ```DAX
-Cancellation Rate =
-DIVIDE(
-    CALCULATE(
-        [Total Orders],
-        'orders'[Status] = "Cancelled"
-    ),
-    [Total Orders]
-)
+Total Products = DISTINCTCOUNT('products'[ProductID])
 ```
 
 Additional DAX measures were created for customer counts, order metrics, average order value, MoM growth, YoY growth, and other dashboard calculations.
